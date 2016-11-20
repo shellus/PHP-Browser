@@ -22,6 +22,7 @@ class Browser
     protected $port = 80;
 
     protected $currentUrl = '';
+    protected $body = '';
 
     /**
      * 返回当前url
@@ -29,6 +30,14 @@ class Browser
      */
     public function url(){
         return $this -> currentUrl;
+    }
+
+    /**
+     * 返回body内容
+     * @return string
+     */
+    public function body(){
+        return $this -> body;
     }
     public function title(){
         return $this -> crawler -> filter('title') -> text();
@@ -84,6 +93,7 @@ class Browser
      * @return bool
      */
     public function change($body, $url){
+        $this -> body = $body;
         $this -> currentUrl = $url;
         $this -> crawler = new Crawler($body);
         return true;
