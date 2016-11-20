@@ -9,7 +9,6 @@
 namespace Browser;
 
 use Symfony\Component\DomCrawler\Field\InputFormField;
-use Symfony\Component\DomCrawler\FormFieldRegistry;
 
 class Form extends \Symfony\Component\DomCrawler\Form
 {

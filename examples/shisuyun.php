@@ -16,8 +16,8 @@ $browser = new Browser\Browser();
 $browser -> go ($initUrl);
 
 // 从首页html里面拿csrf token
-$csrf_key = $browser -> getCrawler() -> filter('meta[name="csrf-param"]') -> attr('content');
-$csrf_value = $browser -> getCrawler() -> filter('meta[name="csrf-token"]') -> attr('content');
+$csrf_key = $browser -> crawler() -> filter('meta[name="csrf-param"]') -> attr('content');
+$csrf_value = $browser -> crawler() -> filter('meta[name="csrf-token"]') -> attr('content');
 
 // 拿到form元素，并填写账号密码
 /** @var Browser\Form $from */

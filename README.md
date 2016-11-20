@@ -30,7 +30,7 @@ $from -> submit();
 // $browser -> url()
 
 // 获取到该账户的余额
-$money = $browser -> getCrawler() -> filter('#money') ->text();
+$money = $browser -> crawler() -> filter('#money') ->text();
 
 ```
 更多例子请查阅`examples`文件夹
