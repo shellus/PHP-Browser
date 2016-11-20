@@ -33,6 +33,7 @@ $from -> submit();
 $money = $browser -> getCrawler() -> filter('#money') ->text();
 
 ```
+更多例子请查阅`examples`文件夹
 
 ### 本项目参考了以下页面
  - php curl文档 ： http://php.net/manual/en/function.curl-getinfo.php
