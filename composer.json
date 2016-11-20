@@ -1,0 +1,20 @@
+{
+  "name": "shellus/php-browser",
+  "authors": [
+    {
+      "name": "shellus",
+      "email": "shellus@endaosi.com"
+    }
+  ],
+  "require": {
+    "symfony/css-selector": "3.1.*",
+    "symfony/dom-crawler": "3.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "require-dev": {
+  }
+}
