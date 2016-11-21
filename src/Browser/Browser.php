@@ -75,13 +75,13 @@ class Browser
      * 网络请求
      * @param $url
      * @param string $method
-     * @param null $data
-     * @return mixed
+     * @param null|array $data
+     * @param array $extandHeaders
+     * @return string
      * @throws \Exception
      */
-    public function request(&$url, $method = "GET", $data = null)
+    public function request(&$url, $method = "GET", $data = null, $extandHeaders = [])
     {
-        $extandHeaders = [];
         if($this -> currentUrl){
             $extandHeaders['Referer'] = $this -> currentUrl;
         }
